@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Data Source-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-Je-j6E" customClass="SegmentControl">
+                                <rect key="frame" x="8" y="290" width="584" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="15k-a8-2QV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="15k-a8-2QV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6QT-SL-kbM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lVj-pL-0Lg"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kwd-Je-j6E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3oV-FM-mWO"/>
+                            <constraint firstItem="Kwd-Je-j6E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="802-xz-ECO"/>
+                            <constraint firstItem="Kwd-Je-j6E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Dmq-Fa-FVp"/>
+                            <constraint firstItem="Kwd-Je-j6E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="JJQ-md-Wew"/>
+                            <constraint firstItem="Kwd-Je-j6E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJU-B5-WOs"/>
+                            <constraint firstAttribute="trailing" secondItem="Kwd-Je-j6E" secondAttribute="trailing" constant="8" id="X6y-Tn-86u"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="802-xz-ECO"/>
+                                <exclude reference="Dmq-Fa-FVp"/>
+                                <exclude reference="JJQ-md-Wew"/>
+                                <exclude reference="X6y-Tn-86u"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="sc" destination="Kwd-Je-j6E" id="et3-Di-1DQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
